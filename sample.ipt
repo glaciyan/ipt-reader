@@ -1,0 +1,15 @@
+person = {
+  name = "John",
+  age = 30,
+  address = {
+    street = "123 Main St",
+    city = "Example City",
+    postalCode = "12345"
+  },
+  emails = {"john@example.com", "johndoe@example.org"},
+  hobbies = {
+    "Reading",
+    "Gardening",
+    "Cooking"
+  }
+}
