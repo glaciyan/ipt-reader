@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ipt-reader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ipt_reader_jar</output-path>
+    <root id="archive" name="ipt.jar">
+      <element id="module-output" name="ipt-reader" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/antlr-runtime-4.13.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

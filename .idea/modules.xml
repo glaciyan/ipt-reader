@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ipt-images.iml" filepath="$PROJECT_DIR$/ipt-images.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipt-reader.iml" filepath="$PROJECT_DIR$/ipt-reader.iml" />
     </modules>
   </component>
 </project>

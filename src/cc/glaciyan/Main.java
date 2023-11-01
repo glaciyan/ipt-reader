@@ -14,7 +14,7 @@ public class Main {
     private final static String FILE_PATH = "./sample.ipt";
 
     public static void main(String[] args) {
-        File f = new File(FILE_PATH);
+        File f = new File(args.length == 0 ? FILE_PATH : args[0]);
         try (var fileStream = new FileInputStream(f)) {
             CharStream stream = CharStreams.fromStream(fileStream);
             IPTLexer lexer = new IPTLexer(stream);
