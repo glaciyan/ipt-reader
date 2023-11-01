@@ -47,7 +47,6 @@ public class IPTFileVisitor extends IPTBaseVisitor<IPTAny> {
             return new IPTNamed.String(ctx.VARNAME().getText(), (IPTString) text);
         }
 
-
         if (val.NUMBER() != null) {
             var num = visitChildren(ctx);
             return new IPTNamed.Number(ctx.VARNAME().getText(), (IPTNumber) num);
