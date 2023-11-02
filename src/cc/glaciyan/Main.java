@@ -1,6 +1,10 @@
 package cc.glaciyan;
 
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
+
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 public class Main {
@@ -8,9 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
         File f = new File(args.length == 0 ? FILE_PATH : args[0]);
-        try {
-            IPTFile file = new IPTFile(f);
-            IPTAny ipt = file.read();
+        try (var input = new FileInputStream(f)) {
+            CharStream stream = CharStreams.fromStream(input);
+            IPTAny ipt = IPTFile.read(stream);
             System.out.println(ipt);
         } catch (IOException e) {
             System.err.println(e.getMessage());
