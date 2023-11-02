@@ -1,6 +1,6 @@
 ﻿grammar IPT;
 
-start: value EOF;
+start: named EOF;
 
 named: VARNAME EQ value;
 
